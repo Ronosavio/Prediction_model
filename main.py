@@ -22,7 +22,7 @@ def bank_model():
         f.write(str(confuse)) 
     frontend_path = os.path.join(os.path.dirname(__file__),"frontend", "bank_front.py")
     subprocess.Popen(["streamlit", "run", frontend_path], shell=True)
-    return {"status": f"Streamlit app launched for cancer prediction: Accuracy-> {accuracy*100}"}
+    return {"status": f"Streamlit app launched for bank subscription prediction: Accuracy-> {accuracy*100}"}
 
 @app.get("/cancer")
 def  cancer_model():
