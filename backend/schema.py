@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-class UserData_bank(BaseModel):  # or a normal class if not using FastAPI schema
+class UserData_bank(BaseModel):  
     default: int
     housing: int
     loan: int
@@ -54,3 +54,6 @@ class Cancer_Features(BaseModel):
     concave_points_worst: float
     symmetry_worst: float
     fractal_dimension_worst: float
+    
+class percapita_feature(BaseModel):
+      year: int

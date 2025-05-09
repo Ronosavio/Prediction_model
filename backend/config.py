@@ -6,11 +6,16 @@ class Settings(BaseSettings):
       bank_sc_trained_model: str
       bank_load_trained_data_lg: str
       bank_load_trained_data_sc: str
+      
       cancer_data_path: str
       cancer_lg_trained_model: str
       cancer_sc_trained_model: str
       cancer_load_trained_data_lg: str
       cancer_load_trained_data_sc: str
+      
+      percapita_data_path: str
+      percapita_slr_trained_model: str
+      percapita_plot_path:str
       
       class Config:
             env_file = ".env"  # Tell Pydantic to load from .env
